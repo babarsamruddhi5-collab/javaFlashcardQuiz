@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Java Flashcard Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>☕ Java Flashcard Quiz</h1>
+
+        <p class="subtitle">
+            Learn Java with simple flashcards
+        </p>
+
+
+        <!-- Flashcard -->
+
+        <div class="flashcard">
+
+            <h3 id="cardType">Question</h3>
+
+            <p id="cardText">
+                What is Java?
+            </p>
+
+        </div>
+
+
+        <!-- Counter -->
+
+        <p id="counter">
+            Card 1 of 5
+        </p>
+
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button onclick="previousCard()">
+                ← Previous
+            </button>
+
+            <button
+                onclick="showAnswer()"
+                id="answerButton">
+                Show Answer
+            </button>
+
+            <button onclick="nextCard()">
+                Next →
+            </button>
+
+        </div>
+
+
+        <!-- Manage Flashcards -->
+
+        <div class="manager">
+
+            <h2>Manage Flashcards</h2>
+
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Enter Java question">
+
+            <textarea
+                id="answerInput"
+                placeholder="Enter answer">
+            </textarea>
+
+
+            <div class="manage-buttons">
+
+                <button onclick="addCard()">
+                    ➕ Add
+                </button>
+
+                <button onclick="editCard()">
+                    ✏ Edit
+                </button>
+
+                <button
+                    onclick="deleteCard()"
+                    class="delete">
+                    🗑 Delete
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
